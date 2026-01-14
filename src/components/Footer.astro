@@ -1,13 +1,11 @@
 ---
-const platform = "github";
-const username = "withastro";
-
-const platform2 = "x";
-const username2 = "CyberSakura_JPN";
+import Social from './Social.astro';
 
 ---
 
 <footer>
-  <p>私のプロジェクトについて詳しくは<a href={`https://www.${platform}.com/${username}`}>{platform}</a>をご確認ください！</p>
-  <p><a href={`https://www.${platform2}.com/${username2}`}>{platform2}</a></p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+
 </footer>
